@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning G's!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+
+        audio {
+            display: none;
+        }
+
+        button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Good Morning G's!</h1>
+    <button onclick="playAudio()">Play Morning Greeting</button>
+
+    <!-- Audio element -->
+    <audio id="morningAudio">
+        <source src="final1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('morningAudio');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
